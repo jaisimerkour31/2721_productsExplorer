@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products Explorer</title>
+
+    <link rel="stylesheet" href="project2.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🛍️ Products Explorer</h1>
+        <p>Explore different products easily</p>
+    </header>
+
+    <section class="controls">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔍 Search products..."
+        >
+
+        <select id="category">
+            <option value="all">All Categories</option>
+        </select>
+
+        <select id="sort">
+            <option value="default">Sort By</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="rating">Rating</option>
+        </select>
+
+    </section>
+
+    <p id="result"></p>
+
+    <main id="products">
+        <p class="loading">Loading products...</p>
+    </main>
+
+    <script src="script2.js"></script>
+
+</body>
+</html>
