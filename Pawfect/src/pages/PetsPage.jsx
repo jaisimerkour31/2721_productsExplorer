@@ -80,16 +80,15 @@ export default function PetsPage({
           Browse through all our rescued companions currently ready for their forever homes.
         </p>
 
-        {/* Live API Info Banner */}
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginTop: '12px', background: 'var(--primary-subtle)', padding: '6px 16px', borderRadius: 'var(--radius-full)', fontSize: '13px', fontWeight: 600, color: 'var(--primary)' }}>
-          <span>🌐</span> Live Dog CEO API Connected
+        {/* Optional dog photo refresh action */}
+        <div className="dog-photo-refresh-wrap">
           <button
+            className="dog-photo-refresh"
             onClick={fetchLivePets}
             disabled={loading}
-            title="Refresh animal photos from live APIs"
-            style={{ marginLeft: '6px', color: 'var(--primary-dark)', cursor: 'pointer', background: 'none', border: 'none', fontWeight: 700, textDecoration: 'underline' }}
+            title="Refresh dog photos"
           >
-            {loading ? 'Refreshing...' : 'Refresh Photos 🔄'}
+            {loading ? 'Refreshing photos...' : 'Refresh dog photos ↻'}
           </button>
         </div>
 

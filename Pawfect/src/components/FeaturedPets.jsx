@@ -30,7 +30,7 @@ export default function FeaturedPets({ pets, onViewDetails, onAdopt, onExploreAl
 
       <div style={{ marginTop: '48px' }}>
         <button className="btn btn-primary" onClick={onExploreAll}>
-          View All 9 Pets 🐾
+          View All Pets 🐾
         </button>
       </div>
     </section>

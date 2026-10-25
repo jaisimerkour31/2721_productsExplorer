@@ -18,30 +18,6 @@ const CATEGORIES = [
     title: 'Gentle Rabbits',
     emoji: '🐰',
     desc: 'Sweet, quiet, and gentle companions with adorable bouncy energy.'
-  },
-  {
-    type: 'Bird',
-    title: 'Chirping Birds',
-    emoji: '🐦',
-    desc: 'Vibrant, musical, and intelligent feathered friends that brighten every room.'
-  },
-  {
-    type: 'Hamster',
-    title: 'Tiny Hamsters',
-    emoji: '🐹',
-    desc: 'Curious, easy-care pocket companions full of comical cheek-stuffing charm.'
-  },
-  {
-    type: 'Guinea Pig',
-    title: 'Guinea Pigs',
-    emoji: '🐹',
-    desc: 'Social, vocal, and gentle companions who love lap cuddles and fresh greens.'
-  },
-  {
-    type: 'Turtle',
-    title: 'Calm Turtles',
-    emoji: '🐢',
-    desc: 'Peaceful, hardy, and serene lifelong companions who love sunny basking.'
   }
 ];
 
@@ -55,7 +31,7 @@ export default function CategoryCards({ onSelectCategory }) {
         Choose Your Companion
       </h2>
       <p className="section-subtext">
-        Find a loving dog, cat, rabbit, bird, hamster, guinea pig, or turtle waiting with open paws for their forever family.
+        Find a loving dog, cat, or rabbit waiting for a forever home.
       </p>
 
       <div className="category-grid">

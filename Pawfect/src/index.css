@@ -1718,3 +1718,37 @@ button:active, .btn:active, .nav-item:active { transform: scale(.98); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+
+/* Focused finishing touches for the three supported pet categories */
+.category-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.dog-photo-refresh-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 14px 0 2px;
+}
+.dog-photo-refresh {
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 8px 15px;
+  background: var(--bg-card);
+  color: var(--text-main);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+.dog-photo-refresh:hover:not(:disabled) {
+  transform: translateY(-1px);
+  border-color: var(--primary);
+}
+.dog-photo-refresh:disabled { opacity: .65; cursor: wait; }
+@media (max-width: 900px) {
+  .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .category-grid { grid-template-columns: 1fr; }
+}
